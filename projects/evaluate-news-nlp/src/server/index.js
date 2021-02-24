@@ -10,7 +10,8 @@ const app = express()
 // You could call it MeaningCloud API, or anything else
 var textapi = new meaningCloudAPI({
     application_key: process.env.API_KEY
-  });
+});
+console.log('API Key: ', process.env.API_KEY)
 
 
 app.use(express.static('dist'))
