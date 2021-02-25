@@ -9,12 +9,15 @@ function checkForName(inputText) {
     ]
     
     if(names.includes(inputText)) {
-        alert(`Welcome, Captain ${inputText}!`)
+        document.getElementById('inputUserName').innerHTML = `Welcome, Captain ${inputText}!`
+        return true
     }else{
         if (inputText == '') {
-            alert(`Oh, you do not have a name!`)
+            document.getElementById('inputUserName').innerHTML = `Oh, you do not have a name!`
+            return false
         }else{
-            alert(`Welcome, Stranger ${inputText}!`)
+            document.getElementById('inputUserName').innerHTML = `Welcome, Stranger ${inputText}!`
+            return true
         }
     }
 }

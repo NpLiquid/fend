@@ -12,6 +12,7 @@ function handleSubmit(event) {
     if (formInputText == '') {
         let generalMessage = 'Well, I guess there is nothing to analyse. Maybe you want to try it again'
         document.getElementById('results').innerHTML = generalMessage
+        console.log(generalMessage)
     } else {
         console.log("::: Form Submitted :::")
 
@@ -34,7 +35,7 @@ function handleSubmit(event) {
         })
         .catch(error => {
             console.log('Server inaccessible')
-            alert(`Server inaccessible.\\nThe Sentiment analysis can not be reached.\\nTry again later`)
+            alert(`Server inaccessible.\nThe Sentiment analysis can not be reached.\nTry again later`)
             throw error;
         })
     }
