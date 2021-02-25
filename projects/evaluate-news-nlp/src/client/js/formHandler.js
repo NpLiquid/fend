@@ -32,6 +32,11 @@ function handleSubmit(event) {
             let responseMessage = `agreement: ${res.agreement}, confidence: ${res.confidence}, irony: ${res.irony}, score_tag: ${res.score_tag}, status code: ${res.status.code}, status message: ${res.status.msg}`
             document.getElementById('results').innerHTML = responseMessage
         })
+        .catch(error => {
+            console.log('Server inaccessible')
+            alert(`Server inaccessible.\\nThe Sentiment analysis can not be reached.\\nTry again later`)
+            throw error;
+        })
     }
 }
 
