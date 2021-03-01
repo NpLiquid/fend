@@ -3,7 +3,8 @@
 ## Table of Contents
 
 * [Description](#description)
-* [Local Deployment](#local)
+* [Local Deployment](#local-deployment)
+* [Online Deployment](#online-deployment)
 * [Structure](#structure)
 
 ## Description
@@ -47,6 +48,11 @@ In a second terminal run:
 
 - `npm run build-prod`
 - `npm start`
+
+## Online Deployment
+
+- A version of this Web application can be accessed via Heroku (https://www.heroku.com/) at `https://nlpudacity.herokuapp.com/`
+
 
 ## Structure
 The project files are structured as follow:
