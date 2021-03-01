@@ -34,3 +34,28 @@ describe("Testing that the handleSubmit function is defined", () => {
         expect(handleSubmit).toBeDefined();
     });
 });
+
+describe("Testing that the text entered by the user is read", () => {
+    function formInputText(inputText) {
+        //prepare the DOM elements we need to test the function
+        document.body.innerHTML = `
+            <input id="inputText" type="text" name="inputText" value="" placeholder="What text should we analyse?"></input>
+        `;
+        //ask for the DOM file that implements the function that we are going to test
+        require('../js/formHandler.js');
+
+        //use the selector for the DOM element we are testing 
+        const newInputDiv = document.getElementById('inputText');
+
+        newInputDiv.value = '';
+        return newInputDiv.innerHTML = inputText
+    }    
+
+    test('Text not entered in inputText', () => {
+        expect(formInputText('')).toBe(``);
+    });
+
+    test('Text entered in inputText', () => {
+        expect(formInputText('I feel awesome')).toBe(`I feel awesome`);
+    });
+});
