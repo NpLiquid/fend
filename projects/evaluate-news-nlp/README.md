@@ -51,7 +51,7 @@ In a second terminal run:
 
 ## Online Deployment
 
-- A version of this Web application can be accessed via Heroku (https://www.heroku.com/) at `https://nlpudacity.herokuapp.com/`
+- A version of this Web application can be accessed via Heroku (https://www.heroku.com/) at https://nlpudacity.herokuapp.com/
 
 
 ## Structure
