@@ -4,6 +4,7 @@
 
 * [Description](#description)
 * [Local Deployment](#local)
+* [Structure](#structure)
 
 ## Description
 This project is part of the Front End Web Developer Nanodegree Program from Udacity. The started code can be found in https://github.com/udacity/fend/tree/refresh-2019
